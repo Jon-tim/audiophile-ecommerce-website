@@ -24,12 +24,12 @@ function Product() {
   ];
   return (
     <>
-      <div className="flex justify-center flex-wrap  items-center gap-20 py-28 md:gap-x-4 max-w-5xl mx-auto">
+      <div className="flex justify-center flex-wrap  items-center lg:justify-between gap-20 py-28 md:gap-x-4 max-w-5xl mx-auto">
         {products.map((i) => (
           <div
             key={i.id}
             className="bg-grayBg rounded-xl flex
-          flex-col items-center py-8 h-48 relative flex-1 w-full"
+          flex-col items-center py-8 h-48 relative max-w-[320px] w-full"
           >
             <img
               src={i.imageSource}
