@@ -1,7 +1,10 @@
 import React from "react";
-import Navbar from "../../feature/Navbar/Navbar";
-import button from "../../utils/button";
-import Product from "../../feature/Products/Product";
+import Navbar from "../../feature/Navbar";
+import Btn from "../../utils/Btn";
+import Product from "../../feature/Product";
+import SeeProducts from "../../feature/SeeProducts";
+import BestGear from "../../feature/BestGear";
+
 export const Home = () => {
   return (
     <>
@@ -23,13 +26,17 @@ export const Home = () => {
               Experience natural, lifelike audio and exceptional build quality
               made for the passionate music enthusiast.
             </p>
-            <button className="uppercase text-white bg-orangeText px-7 py-3 font-medium">
+            <Btn className="uppercase text-white px-7 py-3 font-medium">
               see product
-            </button>
+            </Btn>
           </div>
         </div>
       </header>
-      <Product />
+      <div className="px-8">
+        <Product />
+        <SeeProducts />
+        <BestGear />
+      </div>
     </>
   );
 };

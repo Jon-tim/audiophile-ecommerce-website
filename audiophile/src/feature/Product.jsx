@@ -1,8 +1,8 @@
 import React from "react";
-import headphones from "../../../src/assets/images/shared/desktop/image-headphones.png";
-import speakers from "../../../src/assets/images/shared/desktop/image-speakers.png";
-import earphones from "../../../src/assets/images/shared/desktop/image-earphones.png";
-import arrowRight from "../../../src/assets/icons/icon-arrow-right.svg";
+import headphones from "../../src/assets/images/shared/desktop/image-headphones.png";
+import speakers from "../../src/assets/images/shared/desktop/image-speakers.png";
+import earphones from "../../src/assets/images/shared/desktop/image-earphones.png";
+import arrowRight from "../../src/assets/icons/icon-arrow-right.svg";
 
 function Product() {
   const products = [
@@ -24,19 +24,19 @@ function Product() {
   ];
   return (
     <>
-      <div className="flex justify-center flex-wrap  items-center lg:justify-between gap-20 py-28 md:gap-x-4 max-w-5xl mx-auto">
+      <div className="flex justify-center flex-wrap  items-center lg:justify-between gap-24 py-28 md:gap-x-4 max-w-5xl mx-auto">
         {products.map((i) => (
           <div
             key={i.id}
             className="bg-grayBg rounded-xl flex
-          flex-col items-center py-8 h-48 relative max-w-[320px] w-full"
+          flex-col items-center py-8 h-48 relative w-full"
           >
             <img
               src={i.imageSource}
               alt={`${i.name} image`}
-              className="w-[50%] absolute -top-14"
+              className="w-[50%] absolute -top-[70px]"
             />
-            <p className="uppercase font-medium text-lg tracking-wider mb-4 mt-14">
+            <p className="uppercase font-medium text-lg tracking-wider mb-4 mt-16">
               {i.name}
             </p>
             <div className="flex items-center gap-3">
