@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../../feature/Navbar";
-import Btn from "../../utils/Btn";
-import Product from "../../feature/Product";
-import SeeProducts from "../../feature/SeeProducts";
-import BestGear from "../../feature/BestGear";
-import Footer from "../../feature/Footer";
+import Navbar from "../feature/Navbar";
+import Btn from "../utils/Btn";
+import Product from "../feature/Product";
+import SeeProducts from "../feature/SeeProducts";
+import BestGear from "../feature/BestGear";
+import Footer from "../feature/Footer";
 export const Home = () => {
   return (
     <>
@@ -14,9 +14,11 @@ export const Home = () => {
       >
         <Navbar />
         <div className="hero max-w-5xl m-auto h-[90%] w-full  xl:h-[85%] flex items-center justify-center xl:justify-start md:h-[]">
-          <div className="hero-details h-[350px] flex flex-col justify-between items-center text-center 
+          <div
+            className="hero-details h-[350px] flex flex-col justify-between items-center text-center 
           
-          xl:text-left xl:items-start">
+          xl:text-left xl:items-start"
+          >
             <p className="text-blk2 uppercase text-base tracking-[1em]">
               new product
             </p>
