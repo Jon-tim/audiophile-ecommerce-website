@@ -34,7 +34,7 @@ export const Home = () => {
           </div>
         </div>
       </header>
-      <div className="px-8">
+      <div className="px-8 xl:mt-10">
         <Product />
         <SeeProducts />
         <BestGear />

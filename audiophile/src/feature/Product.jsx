@@ -24,7 +24,7 @@ function Product() {
   ];
   return (
     <>
-      <div className="flex justify-center flex-wrap items-center lg:justify-between gap-4 py-28 md:gap-x- max-w-5xl mx-auto md:flex-row">
+      <div className="flex justify-center flex-wrap items-center lg:justify-between gap-y-28 py-28 md:gap-x-4 max-w-5xl mx-auto md:flex-row">
         {products.map((i) => (
           <div
             key={i.id}
@@ -34,7 +34,7 @@ function Product() {
             <img
               src={i.imageSource}
               alt={`${i.name} image`}
-              className=" absolute -top-[70px]"
+              className="absolute w-[200px] -top-[70px] xl:w-2/3"
             />
             <p className="uppercase font-medium text-lg tracking-wider mb-4 mt-16">
               {i.name}

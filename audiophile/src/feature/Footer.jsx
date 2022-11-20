@@ -6,8 +6,8 @@ import facebook from "../../src/assets/icons/icon-facebook.svg";
 import instagram from "../../src/assets/icons/icon-instagram.svg";
 function Footer() {
   return (
-    <div className="bg-blk4 mt-20">
-      <div className=" px- py-10 flex flex-col items-center gap-10 md:items-start max-w-5xl mx-auto">
+    <div className="bg-blk4 py-10 mt-20 px-8">
+      <div className="  flex flex-col items-center gap-10 md:items-start max-w-5xl mx-auto">
         <div className="flex flex-col items-center gap-9 md:items-start xl:flex-row xl:justify-between w-full">
           <img src={logo} alt="" />
           <div className="flex items-center flex-col gap-5 text-sm md:flex md:flex-row">

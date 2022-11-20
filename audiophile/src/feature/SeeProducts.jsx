@@ -17,19 +17,23 @@ function SeeProducts() {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-[auto_350px_220px_220px] gap-8 md:grid-rows-[auto_350px_350px] xl:grid-rows-[auto_300px_300px] max-w-5xl mx-auto">
-        <div className="speaker-one bg-orangeText rounded-xl flex flex-col items-center gap-10 py-16 relative md:col-span-2 overflow-hidden xl:flex-row xl:py-20 xl:px-16">
-          <div className="relative w-1/2 md:w-1/4 xl:absolute xl:-bottom-4">
-            <img
+        <div className="speaker-one bg-orangeText rounded-xl flex flex-col items-center gap-10 py-16 relative md:col-span-2 overflow-hidden xl:flex-row xl:py-16 xl:px-16">
+          <div className="relative w-1/2 md:w-1/4 xl:justify-between xl:w-full xl:h-full">
+            {/* <img
               src={circles}
               className="absolute w-full -top-[10%] xl:top-0 xl:"
               alt=""
-            />
+            /> */}
             <img src={smZx9} className="md:hidden" alt="" />
-            <img src={mdZx9} className="hidden md:block lg:hidden" alt="" />
-            <img src={lgZx9} className="hidden lg:block relative" alt="" />
+            <img src={mdZx9} className="hidden md:block xl:hidden" alt="" />
+            <img
+              src={lgZx9}
+              className="hidden xl:block w-3/4 relative left-8 -bottom-20"
+              alt=""
+            />
           </div>
-          <div className="image-details flex flex-col items-center gap-7 xl:items-start">
-            <h1 className=" text-5xl md:text-7xl uppercase text-white font-medium text-center xl:text-left">
+          <div className="image-details flex flex-col items-center gap-7 xl:items-start ">
+            <h1 className=" text-5xl md:text-7xl uppercase text-white font-medium text-center xl:text-left xl:text-6xl">
               zx9 <br /> speaker
             </h1>
             <p className="text-white/80 text-center w-5/6 md:w-96 xl:text-left">
