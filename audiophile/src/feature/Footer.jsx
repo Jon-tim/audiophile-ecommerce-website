@@ -1,9 +1,11 @@
 import React from "react";
 import list from "../data/data";
+import Navlist from "./Navlist";
 import logo from "../../src/assets/icons/logo.svg";
 import twitter from "../../src/assets/icons/icon-twitter.svg";
 import facebook from "../../src/assets/icons/icon-facebook.svg";
 import instagram from "../../src/assets/icons/icon-instagram.svg";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="bg-blk4 py-10 mt-20 px-8">
@@ -11,14 +13,7 @@ function Footer() {
         <div className="flex flex-col items-center gap-9 md:items-start xl:flex-row xl:justify-between w-full">
           <img src={logo} alt="" />
           <div className="flex items-center flex-col gap-5 text-sm md:flex md:flex-row">
-            {list.map((i) => (
-              <a
-                key={i}
-                className="text-white uppercase cursor-pointer hover:text-orangeText font-semibold transition"
-              >
-                {i}
-              </a>
-            ))}
+            <Navlist></Navlist>
           </div>
         </div>
         <p className="text-blk2 text-center md:text-left font-light md:text-sm xl:w-1/2">

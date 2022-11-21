@@ -6,7 +6,7 @@ import { useRef } from "react";
 
 function BestGear() {
   return (
-    <div className="flex flex-col gap-8 mt-24 w-full md:gap-16 lg:flex-row-reverse lg:gap-8 max-w-5xl mx-auto">
+    <div className="flex flex-col gap-8 mt-20 w-full md:gap-16 lg:flex-row-reverse lg:gap-8 max-w-5xl mx-auto">
       <div className=" rounded-xl overflow-hidden lg:rounded-lg lg:w-1/2">
         <img src={smBestGear} alt="" className=" md:hidden w-full" />
         <img
