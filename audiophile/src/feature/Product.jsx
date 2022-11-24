@@ -3,6 +3,7 @@ import headphones from "../../src/assets/images/shared/desktop/image-headphones.
 import speakers from "../../src/assets/images/shared/desktop/image-speakers.png";
 import earphones from "../../src/assets/images/shared/desktop/image-earphones.png";
 import arrowRight from "../../src/assets/icons/icon-arrow-right.svg";
+import { NavLink } from "react-router-dom";
 
 function Product() {
   const products = [
@@ -24,12 +25,13 @@ function Product() {
   ];
   return (
     <>
-      <div className="flex justify-center flex-wrap items-center lg:justify-between gap-y-28 py-28 md:gap-x-4 max-w-5xl mx-auto md:flex-row">
+      <div className="flex justify-center flex-wrap items-center lg:justify-between gap-y-28 py-28 md:gap-x-4 max-w-5xl mx-auto md:flex-row ">
         {products.map((i) => (
-          <div
+          // <NavLink>
+          <NavLink
+            to={`/${i.name}`}
             key={i.id}
-            className="bg-grayBg rounded-xl flex
-          flex-col items-center py-8 h-48 relative md:flex-1 w-full"
+            className="bg-grayBg rounded-xl flex flex-col items-center py-8 h-48 relative md:flex-1 w-full cursor-pointer"
           >
             <img
               src={i.imageSource}
@@ -43,7 +45,8 @@ function Product() {
               <span className="uppercase text-blk2 font-semibold">shop</span>
               <img src={arrowRight} alt="arrow right icon" />
             </div>
-          </div>
+          </NavLink>
+          // </NavLink>
         ))}
       </div>
     </>
