@@ -3,8 +3,12 @@ import Navbar from "../feature/Navbar";
 import Footer from "../feature/Footer";
 import BestGear from "../feature/BestGear";
 import Product from "../feature/Product";
+import PageProducts from "../components/PageProducts";
+import { fetchPageProducts } from "../functions/fetchPageProducts";
 
 function Headphones() {
+  const { headphones } = fetchPageProducts();
+
   return (
     <div>
       <div className="bg-blk4">
@@ -14,6 +18,27 @@ function Headphones() {
             headphones
           </h1>
         </div>
+      </div>
+      <div className="flex flex-col gap-16 my-16">
+        {headphones?.map((i, index) => {
+          //   {
+          //     if (index === 1) {
+          //     //   console.log(i);
+          //     }
+          //   }
+          return (
+            <PageProducts
+              flex={i.flex}
+              key={i.id}
+              new={i.new}
+              title={i.title}
+              description={i.description}
+              imgSm={i.imageSm}
+              imgMd={i.imageMd}
+              imgLg={i.imageLg}
+            />
+          );
+        })}
       </div>
       <Product />
       <BestGear />
