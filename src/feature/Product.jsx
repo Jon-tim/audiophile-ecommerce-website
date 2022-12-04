@@ -29,17 +29,17 @@ function Product() {
         {products.map((i) => (
           // <NavLink>
           <NavLink
-            to={`/${i.name}`}
+            to={`/${i?.name}`}
             key={i.id}
             className="bg-grayBg rounded-xl flex flex-col items-center py-8 h-48 relative md:flex-1 w-full cursor-pointer"
           >
             <img
-              src={i.imageSource}
-              alt={`${i.name} image`}
+              src={i?.imageSource}
+              alt={`${i?.name} image`}
               className="absolute w-[200px] -top-[70px] xl:w-2/3"
             />
             <p className="uppercase font-medium text-lg tracking-wider mb-4 mt-16">
-              {i.name}
+              {i?.name}
             </p>
             <div className="flex items-center gap-3">
               <span className="uppercase text-blk2 font-semibold">shop</span>

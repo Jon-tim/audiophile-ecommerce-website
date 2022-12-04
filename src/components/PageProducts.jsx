@@ -6,22 +6,22 @@ function PageProducts(props) {
 //   console.log(props.id)
   return (
     <>
-      <div className={` ${props.flex?'flex-row-reverse':''} max-w-5xl mx-auto w-full flex items-center gap-16`}>
+      <div className={` ${props?.flex?'flex-row-reverse':''} max-w-5xl mx-auto w-full flex items-center gap-16`}>
         <div className="w-1/2 rounded-xl overflow-hidden">
           <picture className="">
-            <source media="(min-width: 1280px )" srcSet={props.imgLg} />
-            <source media="(min-width:768px )" srcSet={props.imgMd} />
-            <img src={props.imgSm} alt="product Image" className="" />
+            <source media="(min-width: 1280px )" srcSet={props?.imgLg} />
+            <source media="(min-width:768px )" srcSet={props?.imgMd} />
+            <img src={props?.imgSm} alt="product Image" className="" />
           </picture>
         </div>
         <aside className="w-1/2 flex flex-col items-start gap-4">
-          {props.new ? (
+          {props?.new ? (
             <p className="text-orangeBg uppercase text-base tracking-[1em]">
               new product
             </p>
           ) : null}
-          <h1 className="uppercase text-5xl w-3/4">{props.title}</h1>
-          <p className="text-blk3">{props.description}</p>
+          <h1 className="uppercase text-5xl w-3/4">{props?.title}</h1>
+          <p className="text-blk3">{props?.description}</p>
           <Btn>see product</Btn>
         </aside>
       </div>

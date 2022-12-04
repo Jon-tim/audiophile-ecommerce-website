@@ -21,14 +21,14 @@ function Speakers() {
       <div className="flex flex-col gap-16 my-16">
         {speakers?.map((i) => (
           <PageProducts
-            flex={i.flex}
-            key={i.id}
-            new={i.new}
-            title={i.title}
-            description={i.description}
-            imgSm={i.imageSm}
-            imgMd={i.imageMd}
-            imgLg={i.imageLg}
+            flex={i?.flex}
+            key={i?.id}
+            new={i?.new}
+            title={i?.title}
+            description={i?.description}
+            imgSm={i?.imageSm}
+            imgMd={i?.imageMd}
+            imgLg={i?.imageLg}
           />
         ))}
       </div>
