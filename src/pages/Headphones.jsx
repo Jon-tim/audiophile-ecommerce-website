@@ -21,11 +21,6 @@ function Headphones() {
       </div>
       <div className="flex flex-col gap-16 my-16">
         {headphones?.map((i, index) => {
-          //   {
-          //     if (index === 1) {
-          //     //   console.log(i);
-          //     }
-          //   }
           return (
             <PageProducts
               flex={i?.flex}
@@ -36,6 +31,7 @@ function Headphones() {
               imgSm={i?.imageSm}
               imgMd={i?.imageMd}
               imgLg={i?.imageLg}
+              slug={i?.slug}
             />
           );
         })}

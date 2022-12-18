@@ -30,7 +30,10 @@ export const Home = () => {
               Experience natural, lifelike audio and exceptional build quality
               made for the passionate music enthusiast.
             </p>
-            <Btn className="uppercase text-white px-7 py-3 font-medium">
+            <Btn
+              className="uppercase text-white px-7 py-3 font-medium"
+              linkTo={"/xx99-mark-two-headphones"}
+            >
               see product
             </Btn>
           </div>

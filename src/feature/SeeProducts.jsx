@@ -13,6 +13,8 @@ import smYx1 from "../../src/assets/images/home/mobile/image-earphones-yx1.jpg";
 import SecondaryBtn from "../utils/SecondaryBtn";
 import TertiaryBtn from "../utils/TertiaryBtn";
 
+import { Link } from "react-router-dom";
+
 function SeeProducts() {
   return (
     <>
@@ -40,21 +42,21 @@ function SeeProducts() {
               Upgrade to premium speakers that are phenomentally built to
               deliver truly remarkable sound.
             </p>
-            <TertiaryBtn>see product</TertiaryBtn>
+            <TertiaryBtn linkTo={"/zx9-speaker"}>see product</TertiaryBtn>
           </div>
         </div>
         <div className="bg-[url('../src/assets/images/home/mobile/image-speaker-zx7.jpg')] md:bg-[url('../src/assets/images/home/tablet/image-speaker-zx7.jpg')] xl:bg-[url('../src/assets/images/home/desktop/image-speaker-zx7.jpg')] bg-center bg-no-repeat bg-cover rounded-xl px-8 py-10 flex flex-col items-start justify-center md:col-span-2 ">
           <h1 className="uppercase font-medium text-blk4 text-4xl mb-8">
             zx7 speaker
           </h1>
-          <SecondaryBtn>see product</SecondaryBtn>
+          <SecondaryBtn linkTo={"/zx7-speaker"}>see product</SecondaryBtn>
         </div>
         <div className="earphones-image bg-[url('../src/assets/images/home/mobile/image-earphones-yx1.jpg')] md:bg-[url('../src/assets/images/home/tablet/image-earphones-yx1.jpg')] xl:bg-[url('../src/assets/images/home/desktop/image-earphones-yx1.jpg')] bg-no-repeat bg-center bg-cover rounded-xl md:col-span-1"></div>
         <div className="earphones-details bg-grayBg rounded-xl px-8 flex flex-col items-start justify-center md:col-span-1">
           <h1 className="uppercase font-medium text-blk4 text-4xl mb-8">
             yx1 earphones
           </h1>
-          <SecondaryBtn>see product</SecondaryBtn>
+          <SecondaryBtn linkTo={"/yx1-earphones"}>see product</SecondaryBtn>
         </div>
       </div>
     </>

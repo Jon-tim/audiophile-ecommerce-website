@@ -29,6 +29,7 @@ function Earphones() {
             imgSm={i?.imageSm}
             imgMd={i?.imageMd}
             imgLg={i?.imageLg}
+            slug={i?.slug}
           />
         ))}
       </div>

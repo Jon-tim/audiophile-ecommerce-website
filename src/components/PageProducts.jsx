@@ -1,12 +1,17 @@
 import React from "react";
 import Btn from "../utils/Btn";
+import { Link } from "react-router-dom";
 function PageProducts(props) {
   // const data = props.data;
   // console.log(props);
-//   console.log(props.id)
+  //   console.log(props.id)
   return (
     <>
-      <div className={` ${props?.flex?'flex-row-reverse':''} max-w-5xl mx-auto w-full flex items-center gap-16`}>
+      <div
+        className={` ${
+          props?.flex ? "flex-row-reverse" : ""
+        } max-w-5xl mx-auto w-full flex items-center gap-16`}
+      >
         <div className="w-1/2 rounded-xl overflow-hidden">
           <picture className="">
             <source media="(min-width: 1280px )" srcSet={props?.imgLg} />
@@ -22,7 +27,9 @@ function PageProducts(props) {
           ) : null}
           <h1 className="uppercase text-5xl w-3/4">{props?.title}</h1>
           <p className="text-blk3">{props?.description}</p>
-          <Btn>see product</Btn>
+          <Btn linkTo={`/${props?.slug}`} slugName={props.slug}>
+            see product
+          </Btn>
         </aside>
       </div>
     </>
