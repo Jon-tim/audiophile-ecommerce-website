@@ -66,7 +66,7 @@ export default function SingleProduct() {
       </div>
       <div className="max-w-5xl mx-auto mb-20">
         <p
-          className="capitalize font-semibold text-sm cursor-pointer text-blk3 my-8 hover:text-blk2"
+          className="capitalize font-semibold text-sm cursor-pointer text-blk3 my-8 hover:text-blk2 w-max"
           onClick={() => {
             navigate(-1);
           }}

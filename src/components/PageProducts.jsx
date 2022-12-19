@@ -2,9 +2,6 @@ import React from "react";
 import Btn from "../utils/Btn";
 import { Link } from "react-router-dom";
 function PageProducts(props) {
-  // const data = props.data;
-  // console.log(props);
-  //   console.log(props.id)
   return (
     <>
       <div
